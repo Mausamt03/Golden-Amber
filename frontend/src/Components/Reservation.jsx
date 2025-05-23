@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4001/api/v1/reservation/send",
+        "https://golden-amber-production.up.railway.app/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
